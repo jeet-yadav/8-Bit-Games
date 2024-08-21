@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #f3dea1;
+    font-family: 'pixel';
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(33, 31, 31);
+}
+@font-face {
+    font-family: 'pixel';
+    src: url('fonts/pixel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+section{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(87, 59, 24);
+}
+.p1 h1:hover{
+    color: #e6dec7;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+.p1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 45px;
+    cursor: pointer;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+.p1 i{
+    font-size: 50px;
+    margin: 0 10px;
+}
+.p2{
+    position: relative;
+    left: 70px;
+    display: flex;
+    gap: 50px;
+}
+.p2 h3{
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.p2 h3:hover{
+    color: #e6dec7;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+.p3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.searchBar{
+    background-color: rgb(62, 40, 14);
+    height: 35px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.p3 input{
+    height: 22px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #e6dec7;
+    cursor: pointer;
+}
+.searchBar img{
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+#menu{
+    height: 30px;
+    margin: 0 10px;
+    color: #f3dea1;
+    cursor: pointer;
+}
