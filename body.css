@@ -1,0 +1,8 @@
+.hero{
+    height: 100%;
+    position: relative;
+    background-image: url(images/astronauts.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
