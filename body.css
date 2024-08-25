@@ -5,4 +5,124 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    /* opacity: 40%; */
+}
+.info{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 0 0 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.table{
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.278);
+    backdrop-filter: blur(40px);
+    padding: 10px;
+}
+.title{
+    background-color: rgba(137, 43, 226, 0.351);
+    height: 20%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+}
+.left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left img{
+    height: 5.5rem;
+    rotate: 180deg;
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+}
+.right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.right img{
+    height: 5.5rem;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center img{
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.center img:hover{
+    transform: scale(1.08);
+
+}
+.left img,
+.right img {
+    height: 3.5rem;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.left img {
+    rotate: 180deg;
+    right: 10px;
+}
+.right img {
+    left: 10px;
+}
+.left img:hover,
+.right img:hover {
+    transform: scale(1.1);
+}
+.content{
+    height: 50%;
+    background-color: rgba(240, 248, 255, 0.359);
+    color:black;
+    border-radius: 10px 4px 5px 10px;
+    padding: 10px;
+    margin-top: 2%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.content::-webkit-scrollbar {
+    width: 8px;
+    height: 50px;
+}
+.content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.content::-webkit-scrollbar-thumb {
+    background: rgba(142, 65, 202, 0.3);
+    border-radius: 10px;
+    border: 4px solid rgba(0, 0, 0, 0.2); 
+}
+.content::-webkit-scrollbar-track {
+    background: transparent;
+}
+.content::-webkit-scrollbar-thumb:hover {
+    background: rgba(132, 15, 236, 0.5);
+}
+.extraInfo{
+    background-color: rgba(240, 255, 255, 0.114);
+    color: black;
+    height: 25%;
+    margin-top: 2%;
+    border-radius: 10px;
 }

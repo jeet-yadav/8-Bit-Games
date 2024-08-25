@@ -1,5 +1,5 @@
+let star = document.querySelector(".p1 i");
 function starRotate(){
-    let star = document.querySelector(".p1 i");
     gsap.from(star,{
     rotate:360,
     duration: 2,
@@ -50,5 +50,32 @@ function navAnimation(){
         delay:1
     });
 }
+function starStart(){
+    gsap.from(star,{
+        scale:150,
+        duration: 2,
+        ease: "xepo",
+    })
+}
 starRotate()
 navAnimation()
+let info = document.querySelector(".info");
+
+let titleImage = document.querySelector(".center img");
+let left = document.querySelector(".left");
+let right = document.querySelector(".right");
+
+right.addEventListener("click",()=>{
+    gsap.to(titleImage,{
+        x:-600,
+        duration: 1,
+        ease: "elastic",
+    })
+})
+left.addEventListener("click",()=>{
+    gsap.to(titleImage,{
+        x:300,
+        duration: 1,
+        ease: "elastic",
+    })
+})
