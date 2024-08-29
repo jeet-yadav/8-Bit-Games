@@ -65,17 +65,20 @@ let titleImage = document.querySelector(".center img");
 let left = document.querySelector(".left");
 let right = document.querySelector(".right");
 
-right.addEventListener("click",()=>{
-    gsap.to(titleImage,{
-        x:-600,
-        duration: 1,
-        ease: "elastic",
-    })
-})
+let currentY = 0;
 left.addEventListener("click",()=>{
     gsap.to(titleImage,{
-        x:300,
-        duration: 1,
-        ease: "elastic",
+        x: currentY - 600,
+        duration: 1.5,
+        ease: "power3.inOut",
     })
+    currentY -= 600
+})
+right.addEventListener("click",()=>{
+    gsap.to(titleImage,{
+        x: currentY + 600,
+        duration: 1.5,
+        ease: "power3.inOut",
+    })
+    currentY += 600;
 })

@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    display: flex;
     /* opacity: 40%; */
 }
 .info{
@@ -125,4 +126,80 @@
     height: 25%;
     margin-top: 2%;
     border-radius: 10px;
+}
+.info2{
+    height: 100%;
+    width: 50%;
+    padding: 4% 0 0 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.table2{
+    height: 80%;
+    width: 90%;
+    position: relative;
+    right: 5%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.278);
+    backdrop-filter: blur(40px);
+    padding: 10px;
+}
+.video{
+    height: 71%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.278);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.video video{
+    /* height: 100%; */
+    width: 100%;
+    border-radius: 10px;
+}
+.purchasePannel{
+    background-color: rgba(240, 255, 255, 0.114);
+    color: black;
+    height: 26%;
+    margin-top: 2%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.pannel1{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.button {
+    height: 40%;
+    width: 90%;
+    background-color: #40a343;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #3a8b3f; /* Darker green */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
 }
