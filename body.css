@@ -179,10 +179,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    
+    flex-wrap: wrap;
 }
-.button {
+.purchase{
     height: 40%;
     width: 90%;
     background-color: #40a343;
@@ -198,8 +197,90 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.button:hover {
-    background-color: #3a8b3f; /* Darker green */
+.purchase h3{
+    color: rgb(16, 51, 17);
+}
+.purchase:hover {
+    background-color: #3a8b3f;
     transform: scale(1.05);
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+.wishlist{
+    height: 40%;
+    width: 72%;
+    background-color: #95b913;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.wishlist h3{
+    color: rgb(16, 51, 17);
+    font-size: 1.2rem;
+}
+.wishlist i{
+    color: rgba(16, 51, 17, 0.912);
+    font-size: 1.2rem;
+}
+.wishlist:hover {
+    background-color: #819f11;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+.wishlist h3{
+    color: rgb(16, 51, 17);
+    font-size: 1.2rem;
+}
+.like{
+    border-radius: 10px;
+    background-color: #1781b6;
+    height: 40%;
+    width: 28%;
+    position: relative;
+    left: 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.like i{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.1rem;
+}
+.like h3{
+    color: rgb(16, 51, 17);
+    font-size: 1.2rem;
+}
+.like:hover{
+    background-color:#12648d;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+.pannel2{
+    height: 85%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    position: relative;
+    left: 57px;
+}
+.pannel2 li{
+    position: relative;
+    right: 15px;
+    list-style: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
 }

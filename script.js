@@ -82,3 +82,46 @@ right.addEventListener("click",()=>{
     })
     currentY += 600;
 })
+
+let menuBar = document.querySelector("#menu");
+let x = document.querySelector("#full i");
+
+let tl = gsap.timeline();
+gsap.to("#full",{
+    right:0,
+    duration:0,
+    ease: "power5.out"
+})
+tl.from("#full h1",{
+    x:100,
+    duration:1,
+    opacity:0,
+    stagger:0.1
+})
+tl.from("#x",{
+    opacity:0
+})
+
+// menuBar.addEventListener("click",function(){
+//     gsap.to("#full",{
+//         right:0,
+//         duration:0.9,
+//         ease: "power5.out"
+//     })
+//     tl.from("#full h1",{
+//         x:100,
+//         duration:1,
+//         opacity:0,
+//         stagger:0.1
+//     })
+//     tl.from("#x",{
+//         opacity:0
+//     })
+// })
+// x.addEventListener("click",function(){
+//     gsap.to("#full",{
+//         right:"-40%",
+//         duration:0.9,
+//         ease: "power5.out"
+//     })
+// })

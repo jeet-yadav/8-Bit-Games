@@ -9,6 +9,7 @@ html, body{
     height: 100%;
     width: 100%;
     background-color: rgb(33, 31, 31);
+    overflow-x: hidden;
 }
 @font-face {
     font-family: 'pixel';
@@ -113,5 +114,56 @@ nav{
     height: 30px;
     margin: 0 10px;
     color: #f3dea1;
+    cursor: pointer;
+}
+#full{
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    z-index: 99;
+    top: 0; 
+    right: -40%;
+    backdrop-filter: blur(10px);
+}
+#cross{
+    height: 50px;
+}
+#cross i{
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#full h1 {
+    position: relative;
+    color: rgba(0, 0, 0, 0.858);
+    margin: 20px 0 0 20px;
+    gap: 20px;
+    font-size: 1.6rem;
+    text-shadow: #3c3c3b 0 0 10px;
+    cursor: pointer;
+}
+
+#full h1::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    width: 110%;
+    height: 45px;
+    background: linear-gradient(90deg, rgba(32, 62, 31, 0.3), rgba(72, 164, 7, 0.7));
+    transform-origin: right;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+#full h1:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+#x{
     cursor: pointer;
 }
